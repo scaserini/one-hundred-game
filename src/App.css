@@ -1,0 +1,48 @@
+:root {
+  --black: #222831;
+  --light-black: #393e46;
+  --light-gray: #d8d8d8;
+  --mid-gray: #cfd3ce;
+  --light-brown: #c6b497;
+  --white: #f1f1f1;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--white);
+}
+
+#root {
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* animations */
+@keyframes loader {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Overwrite MUI CSS */
+.MuiBackdrop-root {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: var(--light-black) !important;
+}
+
+.MuiInput-underline::after {
+  border-bottom: 2px solid var(--light-black) !important;
+}
+
+/* Theme CSS */
+.dark {
+  background-color: #000;
+  color: var(--light-gray);
+}
